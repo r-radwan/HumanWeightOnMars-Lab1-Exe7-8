@@ -1,5 +1,3 @@
-package weight;
-
 
 /* This class to store the weight 
 /* Exercise 8
@@ -8,16 +6,22 @@ package weight;
 *@Radwan
 */
 
+package weight;
+import java.util.HashMap;
+
 public class StoreWeight {
 	
-	int earthWeight;
-	int MarsWeight;
+	/*this HasMap list to store the weight on the earth and mars
+	 * the the key is earth weight and the value is the mars weight
+	 */
+	HashMap<Integer, Integer> weightList = new HashMap<Integer, Integer>();
 	
-	
-	public StoreWeight(int earth,int mars) {
+	ModelClass m;
+	public StoreWeight() {
 		
-		this.earthWeight=earth;
-		this.MarsWeight=mars;
+		//calling the functions that return the earth and mars values
+		weightList.put(m.getNumOne(),m.getComputedValue() );
+		
 	}
 
 }

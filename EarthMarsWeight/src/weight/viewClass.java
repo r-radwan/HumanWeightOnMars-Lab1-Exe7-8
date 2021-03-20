@@ -1,15 +1,16 @@
-package weight;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 
 /*
  * This class to create the buttons and jtext and so on
  * 
  * @ Radwan
  * */
+
+package weight;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
  class ViewClass extends JFrame{
 
@@ -20,9 +21,6 @@ import javax.swing.table.DefaultTableModel;
     private JTextField OutputMars = new JTextField(15);
     private JTextField InputEarth  = new JTextField(15); 
    
-//These ArrayList to store Human weight on earth and Mars
-   ArrayList<ViewClass> earth;
-   ArrayList<ViewClass> mars;
 
 
     ViewClass(){
@@ -39,10 +37,10 @@ import javax.swing.table.DefaultTableModel;
 	   public void actionPerformed(ActionEvent e) {
 				
        ViewClass ViewClassObject= new ViewClass();
-       earth.add(ViewClassObject)	; //Storing Earth Weight in ArrayList	
+       //earth.add(ViewClassObject)	; //Storing Earth Weight in ArrayList	
        ViewClassObject.InputEarth.getText();
        ViewClassObject.OutputMars.getText();
-       mars.add(ViewClassObject);//Storing Earth Weight in ArrayList
+      // mars.add(ViewClassObject);//Storing Earth Weight in ArrayList
 
 
 				// TODO Auto-generated method stub
